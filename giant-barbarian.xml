@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<subclasses>
+  <subclass class="Barbarian" name="Path of the Giant">
+    <source>Bigby Presents: Glory of the Giants</source>
+
+    <level name="3" feature="Giant's Havoc" description="While raging, you gain the following benefits:
+- Size Increase: You become Large.
+- Elemental Cleaver: Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately." />
+
+    <level name="6" feature="Mighty Impel" description="As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone." />
+
+    <level name="10" feature="Giant Fury" description="Your rage now allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging." />
+
+    <level name="14" feature="Demiurgic Colossus" description="Once per turn, when you hit with a melee weapon attack while raging, you can deal additional 1d6 elemental damage. You can become Huge while raging." />
+  </subclass>
+</subclasses>
