@@ -5,10 +5,11 @@
     <description>Giant Barbarian subclass from Bigby Presents: Glory of the Giants</description>
     <author url="https://dnd5e.wikidot.com/barbarian:giant">Tako Bell</author>
     <update version="1.0">
-      <file name="giant-barbarian.index" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/refs/heads/main/giant-barbarian.index" />
+      <file name="giant-barbarian.index" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.index" />
     </update>
   </info>
   <files>
-    <file name="giant-barbarian.xml" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/refs/heads/main/giant-barbarian.xml" />
+    <file name="giant-barbarian.xml" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.xml" />
   </files>
 </index>
+
