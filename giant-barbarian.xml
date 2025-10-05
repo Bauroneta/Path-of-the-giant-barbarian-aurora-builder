@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 
-  <!-- Source metadata so Aurora's Sources panel shows details instead of an empty placeholder -->
+  <!-- SOURCE DEFINITION -->
   <element name="Bigby Presents: Glory of the Giants" type="Source">
     <description>
-      <p>Homebrew conversion / companion material for the Path of the Giant Barbarian.</p>
-      <p>Adapted by Tako Bell (Bauroneta repo).</p>
+      <p>Contains the Path of the Giant Barbarian subclass.</p>
+      <p>Adapted for Aurora Builder by Tako Bell.</p>
     </description>
-    <!-- optional short setter — helpful but not strictly required -->
     <setters>
       <set name="abbreviation">BPGG</set>
+      <set name="url">https://dnd5e.wikidot.com/barbarian:giant</set>
     </setters>
   </element>
 
-  <!-- Subclass (Archetype) -->
+  <!-- SUBCLASS DEFINITION -->
   <element name="Path of the Giant" type="Archetype" source="Bigby Presents: Glory of the Giants">
     <description>
-      <p>Embrace the might of giants and channel elemental power while raging.</p>
+      <p>Embrace the might of giants and channel their elemental power through your rage.</p>
     </description>
     <supports>Barbarian</supports>
   </element>
 
-  <!-- Level 3 feature -->
+  <!-- LEVEL 3 FEATURE -->
   <element name="Giant's Havoc" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>While raging, you gain the following benefits:</p>
@@ -34,7 +34,7 @@
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 6 -->
+  <!-- LEVEL 6 FEATURE -->
   <element name="Mighty Impel" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone.</p>
@@ -43,7 +43,7 @@
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 10 -->
+  <!-- LEVEL 10 FEATURE -->
   <element name="Giant Fury" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Your rage now allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging.</p>
@@ -52,7 +52,7 @@
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 14 -->
+  <!-- LEVEL 14 FEATURE -->
   <element name="Demiurgic Colossus" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Once per turn, when you hit with a melee weapon attack while raging, you can deal an additional 1d6 elemental damage. You can become Huge while raging.</p>
