@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-  <info>
-    <name>Path of the Giant Barbarian</name>
-    <description>Subclass of Barbarian from Bigby Presents: Glory of the Giants.</description>
-    <author url="https://dnd5e.wikidot.com/barbarian:giant">Tako Bell</author>
-    <version>1.0</version>
-    <updateurl>https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.index</updateurl>
-  </info>
-  <files>
-    <file name="giant-barbarian.xml" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.xml" />
-  </files>
+	<info>
+		<name>Path of the Giant Barbarian</name>
+		<description>Giant Barbarian subclass from Bigby Presents: Glory of the Giants.</description>
+		<author url="https://dnd5e.wikidot.com/barbarian:giant">Tako Bell</author>
+		<update version="1.0">
+			<file name="giant-barbarian.index" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.index" />
+		</update>
+	</info>
+	<files>
+		<file name="giant-barbarian.xml" url="https://raw.githubusercontent.com/Bauroneta/Path-of-the-giant-barbarian-aurora-builder/main/giant-barbarian.xml" />
+	</files>
 </index>
