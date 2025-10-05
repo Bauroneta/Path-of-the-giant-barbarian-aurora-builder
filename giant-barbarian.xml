@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-
-  <!-- Source definition so UI shows it -->
-  <element name="Bigby Presents: Glory of the Giants" type="Source">
+  <element name="Bigby Presents: Glory of the Giants" type="Source" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Contains the Path of the Giant Barbarian subclass content.</p>
       <p>Converted by Tako Bell.</p>
@@ -13,52 +11,47 @@
     </setters>
   </element>
 
-  <!-- Subclass base (Archetype) -->
-  <element name="Path of the Giant" type="Archetype" source="Bigby Presents: Glory of the Giants">
+  <element name="Path of the Giant" type="Archetype" source="Bigby Presents: Glory of the Giants" id="ID_BARBARIAN_PATH_GIANT">
     <description>
-      <p>Embrace the might of giants. While raging, channel elemental power and growth in size.</p>
+      <p>Barbarians who follow the Path of the Giant draw on the primordial power of the giants, embodying their strength and elemental fury.</p>
     </description>
-    <supports>Barbarian</supports>
+    <setters>
+      <set name="class">Barbarian</set>
+    </setters>
+
+    <rules>
+      <grant type="Feature" name="Giant's Havoc" level="3"/>
+      <grant type="Feature" name="Mighty Impel" level="6"/>
+      <grant type="Feature" name="Giant Fury" level="10"/>
+      <grant type="Feature" name="Demiurgic Colossus" level="14"/>
+    </rules>
   </element>
 
-  <!-- Level 3 feature -->
-  <element name="Giant's Havoc" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
+  <element name="Giant's Havoc" type="Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>While raging, you gain the following benefits:</p>
       <ul>
-        <li><b>Size Increase:</b> You become Large while raging.</li>
+        <li><b>Size Increase:</b> You become Large.</li>
         <li><b>Elemental Cleaver:</b> Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
       </ul>
     </description>
-    <level>3</level>
-    <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 6 -->
-  <element name="Mighty Impel" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
+  <element name="Mighty Impel" type="Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone.</p>
     </description>
-    <level>6</level>
-    <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 10 -->
-  <element name="Giant Fury" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
+  <element name="Giant Fury" type="Feature" source="Bigby Presents: Glory of the Giants">
     <description>
-      <p>Your rage now allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging.</p>
+      <p>Your rage allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging.</p>
     </description>
-    <level>10</level>
-    <supports>Path of the Giant</supports>
   </element>
 
-  <!-- Level 14 -->
-  <element name="Demiurgic Colossus" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
+  <element name="Demiurgic Colossus" type="Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Once per turn, when you hit with a melee weapon attack while raging, you can deal an additional 1d6 elemental damage. You can become Huge while raging.</p>
     </description>
-    <level>14</level>
-    <supports>Path of the Giant</supports>
   </element>
-
 </elements>
