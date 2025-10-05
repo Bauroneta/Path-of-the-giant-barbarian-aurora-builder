@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Test Source" type="Source">
+    <description>
+      <p>This is a test source element for Aurora Builder.</p>
+    </description>
+    <setters>
+      <set name="abbreviation">TEST</set>
+      <set name="url">https://example.com</set>
+    </setters>
+  </element>
+</elements>
