@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 
-  <!-- SOURCE DEFINITION -->
+  <!-- Source definition so UI shows it -->
   <element name="Bigby Presents: Glory of the Giants" type="Source">
     <description>
-      <p>Contains the Path of the Giant Barbarian subclass.</p>
-      <p>Adapted for Aurora Builder by Tako Bell.</p>
+      <p>Contains the Path of the Giant Barbarian subclass content.</p>
+      <p>Converted by Tako Bell.</p>
     </description>
     <setters>
       <set name="abbreviation">BPGG</set>
@@ -13,28 +13,28 @@
     </setters>
   </element>
 
-  <!-- SUBCLASS DEFINITION -->
+  <!-- Subclass base (Archetype) -->
   <element name="Path of the Giant" type="Archetype" source="Bigby Presents: Glory of the Giants">
     <description>
-      <p>Embrace the might of giants and channel their elemental power through your rage.</p>
+      <p>Embrace the might of giants. While raging, channel elemental power and growth in size.</p>
     </description>
     <supports>Barbarian</supports>
   </element>
 
-  <!-- LEVEL 3 FEATURE -->
+  <!-- Level 3 feature -->
   <element name="Giant's Havoc" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>While raging, you gain the following benefits:</p>
       <ul>
         <li><b>Size Increase:</b> You become Large while raging.</li>
-        <li><b>Elemental Cleaver:</b> Your weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
+        <li><b>Elemental Cleaver:</b> Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
       </ul>
     </description>
     <level>3</level>
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- LEVEL 6 FEATURE -->
+  <!-- Level 6 -->
   <element name="Mighty Impel" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone.</p>
@@ -43,7 +43,7 @@
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- LEVEL 10 FEATURE -->
+  <!-- Level 10 -->
   <element name="Giant Fury" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Your rage now allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging.</p>
@@ -52,7 +52,7 @@
     <supports>Path of the Giant</supports>
   </element>
 
-  <!-- LEVEL 14 FEATURE -->
+  <!-- Level 14 -->
   <element name="Demiurgic Colossus" type="Archetype Feature" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Once per turn, when you hit with a melee weapon attack while raging, you can deal an additional 1d6 elemental damage. You can become Huge while raging.</p>
