@@ -2,7 +2,7 @@
 <elements>
 
   <!-- Subclass Definition -->
-  <element name="Path of the Giant" type="Archetype" id="ID_GIANT_PATH_OF_THE_GIANT">
+  <element name="Path of the Giant" type="Archetype" id="ID_GIANT_PATH_OF_THE_GIANT" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Those who follow the Path of the Giant embody the primal strength and elemental power of the giants.</p>
     </description>
@@ -18,7 +18,7 @@
   </element>
 
   <!-- Level 3: Giant's Power -->
-  <element name="Giant's Power" type="Archetype Feature" id="ID_GIANT_GIANTS_POWER">
+  <element name="Giant's Power" type="Archetype Feature" id="ID_GIANT_GIANTS_POWER" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either <i>druidcraft</i> or <i>thaumaturgy</i>. Wisdom is your spellcasting ability for this spell.</p>
     </description>
@@ -28,7 +28,7 @@
   </element>
 
   <!-- Level 3: Giant's Havoc -->
-  <element name="Giant's Havoc" type="Archetype Feature" id="ID_GIANT_GIANTS_HAVOC">
+  <element name="Giant's Havoc" type="Archetype Feature" id="ID_GIANT_GIANTS_HAVOC" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:</p>
       <ul>
@@ -42,7 +42,7 @@
   </element>
 
   <!-- Level 6: Elemental Cleaver -->
-  <element name="Elemental Cleaver" type="Archetype Feature" id="ID_GIANT_ELEMENTAL_CLEAVER">
+  <element name="Elemental Cleaver" type="Archetype Feature" id="ID_GIANT_ELEMENTAL_CLEAVER" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Your bond with the elemental might of giants grows, and you learn to infuse weapons with primordial energy.</p>
       <p>When you enter your rage, you can choose one weapon that you are holding and infuse it with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon’s damage type changes to the chosen type, it deals an extra 1d6 damage of the chosen type when it hits, and it gains the thrown property (range 20/60). If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon’s benefits are suppressed while a creature other than you wields it.</p>
@@ -54,7 +54,7 @@
   </element>
 
   <!-- Level 10: Mighty Impel -->
-  <element name="Mighty Impel" type="Archetype Feature" id="ID_GIANT_MIGHTY_IMPEL">
+  <element name="Mighty Impel" type="Archetype Feature" id="ID_GIANT_MIGHTY_IMPEL" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>Your connection to giant strength allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) to avoid the effect.</p>
       <p>If, at the end of this movement, the thrown creature isn’t on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone.</p>
@@ -65,7 +65,7 @@
   </element>
 
   <!-- Level 14: Demiurgic Colossus -->
-  <element name="Demiurgic Colossus" type="Archetype Feature" id="ID_GIANT_DEMIURGIC_COLOSSUS">
+  <element name="Demiurgic Colossus" type="Archetype Feature" id="ID_GIANT_DEMIURGIC_COLOSSUS" source="Bigby Presents: Glory of the Giants">
     <description>
       <p>The primordial power of your rage intensifies. When you rage, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you can use your Mighty Impel to move creatures that are Large or smaller.</p>
       <p>In addition, the extra damage dealt by your Elemental Cleaver feature increases to 2d6.</p>
