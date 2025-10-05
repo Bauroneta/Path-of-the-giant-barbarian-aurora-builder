@@ -1,57 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <element name="Bigby Presents: Glory of the Giants" type="Source" source="Bigby Presents: Glory of the Giants">
-    <description>
-      <p>Contains the Path of the Giant Barbarian subclass content.</p>
-      <p>Converted by Tako Bell.</p>
-    </description>
-    <setters>
-      <set name="abbreviation">BPGG</set>
-      <set name="url">https://dnd5e.wikidot.com/barbarian:giant</set>
-    </setters>
-  </element>
+    <!-- Source Definition -->
+    <element name="Bigby Presents: Glory of the Giants" type="Source" id="ID_BIGBY_PRESENTS_GLORY_OF_THE_GIANTS" source="Bigby Presents: Glory of the Giants">
+        <description>
+            <p>Contains the Path of the Giant Barbarian subclass content.</p>
+            <p>Converted by Tako Bell.</p>
+        </description>
+        <setters>
+            <set name="abbreviation">BPGG</set>
+            <set name="url">https://dnd5e.wikidot.com/barbarian:giant</set>
+        </setters>
+    </element>
 
-  <element name="Path of the Giant" type="Archetype" source="Bigby Presents: Glory of the Giants" id="ID_BARBARIAN_PATH_GIANT">
-    <description>
-      <p>Barbarians who follow the Path of the Giant draw on the primordial power of the giants, embodying their strength and elemental fury.</p>
-    </description>
-    <setters>
-      <set name="class">Barbarian</set>
-    </setters>
+    <!-- Subclass: Path of the Giant -->
+    <element name="Path of the Giant" type="Archetype" id="ID_GIANT_PATH_OF_THE_GIANT" source="Bigby Presents: Glory of the Giants">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Barbarians who follow the Path of the Giant draw strength from the primordial forces of the giants, channeling their might and stature in battle.</p>
+        </description>
 
-    <rules>
-      <grant type="Feature" name="Giant's Havoc" level="3"/>
-      <grant type="Feature" name="Mighty Impel" level="6"/>
-      <grant type="Feature" name="Giant Fury" level="10"/>
-      <grant type="Feature" name="Demiurgic Colossus" level="14"/>
-    </rules>
-  </element>
+        <!-- Features -->
+        <element name="Giant Power" type="Archetype Feature" id="ID_GIANT_PATH_OF_THE_GIANT_POWER" source="Bigby Presents: Glory of the Giants">
+            <description>
+                <p>Starting when you choose this path at 3rd level, you learn to speak, read, and write Giant. You also learn the <i>Thaumaturgy</i> cantrip. Constitution is your spellcasting ability for this spell.</p>
+            </description>
+        </element>
 
-  <element name="Giant's Havoc" type="Feature" source="Bigby Presents: Glory of the Giants">
-    <description>
-      <p>While raging, you gain the following benefits:</p>
-      <ul>
-        <li><b>Size Increase:</b> You become Large.</li>
-        <li><b>Elemental Cleaver:</b> Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
-      </ul>
-    </description>
-  </element>
+        <element name="Giant’s Havoc" type="Archetype Feature" id="ID_GIANT_PATH_OF_THE_GIANT_HAVOC" source="Bigby Presents: Glory of the Giants">
+            <description>
+                <p>When you rage, you can channel the might of giants, growing in size. You become Large if you were Medium or smaller, along with anything you’re wearing. Your weapons also grow to match your new size. If there isn’t enough room for you to become Large, your size doesn’t change.</p>
+                <p>While raging in this way, your reach increases by 5 feet, and your thrown weapons deal extra damage equal to your Rage Damage bonus.</p>
+            </description>
+        </element>
 
-  <element name="Mighty Impel" type="Feature" source="Bigby Presents: Glory of the Giants">
-    <description>
-      <p>As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone.</p>
-    </description>
-  </element>
+        <element name="Elemental Cleaver" type="Archetype Feature" id="ID_GIANT_PATH_OF_THE_GIANT_ELEMENTAL_CLEAVER" source="Bigby Presents: Glory of the Giants">
+            <description>
+                <p>At 6th level, you can infuse one weapon with elemental power. When you rage, choose one element: fire, cold, acid, lightning, or thunder. Your weapon deals an extra 1d6 damage of the chosen type while raging.</p>
+            </description>
+        </element>
 
-  <element name="Giant Fury" type="Feature" source="Bigby Presents: Glory of the Giants">
-    <description>
-      <p>Your rage allows you to add your Strength modifier to damage with all melee attacks. You can make one extra melee attack when you take the Attack action while raging.</p>
-    </description>
-  </element>
+        <element name="Mighty Impel" type="Archetype Feature" id="ID_GIANT_PATH_OF_THE_GIANT_MIGHTY_IMPEL" source="Bigby Presents: Glory of the Giants">
+            <description>
+                <p>At 10th level, you gain the ability to hurl creatures. As a bonus action, you can choose a creature that is your size or smaller within 5 feet of you and throw it up to 30 feet to an unoccupied space you can see. The creature must make a Dexterity saving throw or land prone.</p>
+            </description>
+        </element>
 
-  <element name="Demiurgic Colossus" type="Feature" source="Bigby Presents: Glory of the Giants">
-    <description>
-      <p>Once per turn, when you hit with a melee weapon attack while raging, you can deal an additional 1d6 elemental damage. You can become Huge while raging.</p>
-    </description>
-  </element>
+        <element name="Demiurgic Colossus" type="Archetype Feature" id="ID_GIANT_PATH_OF_THE_GIANT_COLOSSUS" source="Bigby Presents: Glory of the Giants">
+            <description>
+                <p>At 14th level, your transformation while raging grows further. You can now become Huge if you were Large or smaller, and your reach increases by 10 feet. The extra damage from your Elemental Cleaver feature increases to 2d6.</p>
+            </description>
+        </element>
+    </element>
 </elements>
