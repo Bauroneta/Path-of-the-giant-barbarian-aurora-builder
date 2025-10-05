@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <!-- Source -->
     <element name="Bigby Presents: Glory of the Giants" type="Source" id="ID_BIGBY_PRESENTS_GLORY_OF_THE_GIANTS" source="Bigby Presents: Glory of the Giants">
         <description>
             <p>Contains the Path of the Giant Barbarian subclass content.</p>
@@ -12,7 +11,6 @@
         </setters>
     </element>
 
-    <!-- Subclass: Path of the Giant -->
     <element name="Path of the Giant" type="Archetype" id="ID_GIANT_PATH_OF_THE_GIANT" source="Bigby Presents: Glory of the Giants">
         <description>
             <p>Barbarians who follow the Path of the Giant draw strength from the primordial forces of the giants, channeling their might and stature in battle.</p>
@@ -20,7 +18,6 @@
         <setters>
             <set name="class">Barbarian</set>
         </setters>
-
         <rules>
             <grant type="Feature" name="Giant's Havoc" level="3"/>
             <grant type="Feature" name="Elemental Cleaver" level="6"/>
@@ -29,13 +26,12 @@
         </rules>
     </element>
 
-    <!-- Features -->
     <element name="Giant's Havoc" type="Feature" id="ID_GIANT_PATH_GIANT_HAVOC" source="Bigby Presents: Glory of the Giants">
         <description>
             <p>While raging, you gain the following benefits:</p>
             <ul>
-                <li><b>Size Increase:</b> You become Large.</li>
-                <li><b>Elemental Cleaver:</b> Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
+                <li>Size Increase: You become Large.</li>
+                <li>Elemental Cleaver: Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
             </ul>
         </description>
     </element>
