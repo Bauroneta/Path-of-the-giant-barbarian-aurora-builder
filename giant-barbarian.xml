@@ -1,56 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <element name="Bigby Presents: Glory of the Giants" type="Source" id="ID_BIGBY_PRESENTS_GLORY_OF_THE_GIANTS" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>Contains the Path of the Giant Barbarian subclass content.</p>
-            <p>Converted by Tako Bell.</p>
-        </description>
-        <setters>
-            <set name="abbreviation">BPGG</set>
-            <set name="url">https://dnd5e.wikidot.com/barbarian:giant</set>
-        </setters>
-    </element>
+  <info>
+    <name>Path of the Giant</name>
+    <description>Path of the Giant (Unearthed Arcana)</description>
+    <author url="https://dnd.wizards.com/articles/unearthed-arcana/giant-options-barbarians-and-druids">Unearthed Arcana - Giant Options for Barbarians and Druids</author>
+    <update version="1.0.0">
+      <file name="barbarian-giant.xml" url="" />
+    </update>
+  </info>
 
-    <element name="Path of the Giant" type="Archetype" id="ID_GIANT_PATH_OF_THE_GIANT" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>Barbarians who follow the Path of the Giant draw strength from the primordial forces of the giants, channeling their might and stature in battle.</p>
-        </description>
-        <setters>
-            <set name="class">Barbarian</set>
-        </setters>
-        <rules>
-            <grant type="Feature" name="Giant's Havoc" level="3"/>
-            <grant type="Feature" name="Elemental Cleaver" level="6"/>
-            <grant type="Feature" name="Mighty Impel" level="10"/>
-            <grant type="Feature" name="Demiurgic Colossus" level="14"/>
-        </rules>
-    </element>
+  <!-- Path of the Giant -->
+  <element name="Path of the Giant" type="Archetype" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_PATH_OF_THE_GIANT">
+    <supports>Primal Path</supports>
+    <description>
+      <p>Barbarians who follow the Path of the Giant draw on the primal forces of the giants, channeling their elemental might and embracing the vast strength and presence of these ancient beings.</p>
+      <div element="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_POWER" />
+      <div element="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_HAVOC" />
+      <div element="ID_UA_GIANT_OPTIONS_FEATURE_ELEMENTAL_CLEAVER" />
+      <div element="ID_UA_GIANT_OPTIONS_FEATURE_MIGHT_OF_THE_GIANT" />
+      <div element="ID_UA_GIANT_OPTIONS_FEATURE_RUNE_OF_THE_GIANT" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_POWER" level="3" />
+      <grant type="Archetype Feature" id="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_HAVOC" level="3" /> 
+      <grant type="Archetype Feature" id="ID_UA_GIANT_OPTIONS_FEATURE_ELEMENTAL_CLEAVER" level="6" />
+      <grant type="Archetype Feature" id="ID_UA_GIANT_OPTIONS_FEATURE_MIGHT_OF_THE_GIANT" level="10" />
+      <grant type="Archetype Feature" id="ID_UA_GIANT_OPTIONS_FEATURE_RUNE_OF_THE_GIANT" level="14" />
+    </rules>
+  </element>
 
-    <element name="Giant's Havoc" type="Feature" id="ID_GIANT_PATH_GIANT_HAVOC" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>While raging, you gain the following benefits:</p>
-            <ul>
-                <li>Size Increase: You become Large.</li>
-                <li>Elemental Cleaver: Weapon attacks deal +1d6 elemental damage (force, cold, fire, lightning, or thunder) and gain the thrown property. Thrown weapons return to your hand immediately.</li>
-            </ul>
-        </description>
-    </element>
+  <!-- Giant’s Power -->
+  <element name="Giant’s Power" type="Archetype Feature" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_POWER">
+    <description>
+      <p>When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either <i>druidcraft</i> or <i>thaumaturgy</i>. Wisdom is your spellcasting ability for this spell.</p>
+    </description>
+    <sheet>
+      <description>Learn Giant (or one language of choice if already known). Learn Druidcraft or Thaumaturgy (Wisdom is your spellcasting ability).</description>
+    </sheet>
+  </element>
 
-    <element name="Elemental Cleaver" type="Feature" id="ID_GIANT_PATH_GIANT_CLEAVER" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>At 6th level, you can infuse one weapon with elemental power. Choose one element: fire, cold, acid, lightning, or thunder. Your weapon deals an extra 1d6 damage of the chosen type while raging.</p>
-        </description>
-    </element>
+  <!-- Giant’s Havoc -->
+  <element name="Giant’s Havoc" type="Archetype Feature" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_FEATURE_GIANT'S_HAVOC">
+    <description>
+      <p>Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:</p>
+      <ul>
+        <li><b>Crushing Throw.</b> When you make a successful ranged attack with a thrown weapon using Strength, you can add your Rage Damage bonus to the attack’s damage roll.</li>
+        <li><b>Giant Stature.</b> Your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn’t enough room for you to increase your size, your size doesn’t change.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>While raging: add Rage Damage to thrown weapon attacks (Str). Your reach increases by 5 ft, and you become Large unless space prevents it.</description>
+    </sheet>
+  </element>
 
-    <element name="Mighty Impel" type="Feature" id="ID_GIANT_PATH_GIANT_IMPEL" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>At 10th level, you gain the ability to hurl creatures. As a bonus action, you can throw a creature within 30 feet, dealing 1d6 damage of your elemental type and knocking it prone.</p>
-        </description>
-    </element>
+  <!-- Elemental Cleaver -->
+  <element name="Elemental Cleaver" type="Archetype Feature" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_FEATURE_ELEMENTAL_CLEAVER">
+    <description>
+      <p>At 6th level, your rage channels elemental power. When you enter your rage, you can imbue one weapon you’re holding with elemental energy of your choice: acid, cold, fire, thunder, or lightning. While you’re raging, the weapon deals an extra 1d6 of the chosen damage type. You can also throw the weapon (range 20/60 ft.), and it returns to your hand after the attack.</p>
+    </description>
+    <sheet>
+      <description>When you rage, imbue a weapon with acid, cold, fire, thunder, or lightning. It deals +1d6 of that type and returns when thrown (range 20/60).</description>
+    </sheet>
+  </element>
 
-    <element name="Demiurgic Colossus" type="Feature" id="ID_GIANT_PATH_GIANT_COLOSSUS" source="Bigby Presents: Glory of the Giants">
-        <description>
-            <p>At 14th level, your transformation while raging grows further. You can become Huge if you were Large or smaller, and your elemental damage increases to 2d6.</p>
-        </description>
-    </element>
+  <!-- Might of the Giant -->
+  <element name="Might of the Giant" type="Archetype Feature" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_FEATURE_MIGHT_OF_THE_GIANT">
+    <description>
+      <p>At 10th level, you have grown in physical might and presence. Your size becomes Large if it was Medium or smaller, and your reach increases by 5 feet. You also have advantage on Strength checks and Strength saving throws.</p>
+    </description>
+    <sheet>
+      <description>Your size becomes Large; your reach increases by 5 ft. Advantage on Strength checks and saves.</description>
+    </sheet>
+  </element>
+
+  <!-- Rune of the Giant -->
+  <element name="Rune of the Giant" type="Archetype Feature" source="Unearthed Arcana: Giant Options" id="ID_UA_GIANT_OPTIONS_FEATURE_RUNE_OF_THE_GIANT">
+    <description>
+      <p>At 14th level, you learn to call upon the runes of giant magic to augment your might. As a bonus action, you can invoke a rune for 1 minute, gaining one of the following benefits of your choice: resistance to bludgeoning, piercing, and slashing damage; an additional 5-foot increase to your reach; or advantage on attack rolls. You can use this feature a number of times equal to your Constitution modifier per long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{modifier:constitution}}/Long Rest">
+      <description>Invoke a rune for 1 minute: gain resistance to bludgeoning/piercing/slashing, +5 ft. reach, or advantage on attacks. Use {{modifier:constitution}}/Long Rest.</description>
+    </sheet>
+  </element>
 </elements>
